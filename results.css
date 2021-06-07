@@ -1,0 +1,205 @@
+:root {
+  --primary: rgb(59, 11, 11);
+  --secondary: rgb(46, 45, 45);
+  --tertiary: rgb(255, 255, 255);
+  --light-grey: rgb(117, 114, 114);
+  --black: rgb(0, 0, 0);
+}
+
+.hero {
+  height: 400px;
+  width: 100%;
+  background-image: url("../Images/musician-2708190_1920-1170x550.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  background-color: var(--primary);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: x-large;
+}
+
+.navbar {
+  background-color: var(--light-grey);
+  color: var(--tertiary);
+  text-align: center;
+  font-size: xx-large;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+body {
+  background-color: var(--secondary);
+}
+
+
+
+a {
+  color: var(--tertiary);
+
+}
+
+.level {
+  background-color: var(--light-grey);
+}
+
+
+.column.is-narrow {
+  padding: 0%
+}
+
+
+.box {
+  position: relative;
+  background-color: var(--primary);
+  color: var(--tertiary);
+  height: fit-content;
+  width: fit-content;
+  margin-top: 20px;
+  margin-right: 100px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 5px;
+  padding: 0, 20px;
+}
+
+.band-info {
+  height: fit-content;
+  width: fit-content;
+}
+
+.venue {
+  color: var(--tertiary);
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.show-times {
+  height: fit-content;
+  width: fit-content;
+}
+
+
+
+#map,
+#pano {
+  float: right;
+  height: 25rem;
+  width: 50rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 200px;
+  color: var(--tertiary);
+  text-align: center;
+}
+
+@media screen and (max-width: 1440px) {
+
+  #map,
+  #pano {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  body {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  #map,
+  #pano {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  body {
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  #map,
+  #pano {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  body {
+    max-width: max-content;
+    max-height: max-content;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #map,
+  #pano {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  body {
+    width: max-content;
+    height: max-content;
+  }
+
+  footer {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  #map,
+  #pano {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  body {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  footer {
+    margin-top: 200px;
+    color: var(--tertiary);
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  #map,
+  #pano {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  body {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  footer {
+    margin-top: 200px;
+    color: var(--tertiary);
+    text-align: center;
+  }
+}
